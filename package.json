@@ -1,0 +1,56 @@
+{
+  "name": "ionic-image-zoomer",
+  "version": "0.0.1",
+  "description": "Ionic Component to zoom images.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf dist aot",
+    "build": "ngc",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "echo \"Error: no test specified\"",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "postchangelog": "git commit -am \"chore(): update changelog\"",
+    "shipit": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubennavarroc/ionic-image-zoomer.git"
+  },
+  "keywords": [
+    "ionic3",
+    "image",
+    "zoom",
+    "ionic",
+    "angular2",
+    "zooming",
+    "pinch",
+    "scaling"
+  ],
+  "author": "Rubén Navarro Castillo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rubennavarroc/ionic-image-zoomer/issues"
+  },
+  "homepage": "https://github.com/rubennavarroc/ionic-image-zoomer#readme",
+  "devDependencies": {
+    "@angular/common": "5.2.11",
+    "@angular/compiler": "5.2.11",
+    "@angular/compiler-cli": "5.2.11",
+    "@angular/core": "5.2.11",
+    "@angular/forms": "5.2.11",
+    "@angular/http": "5.2.11",
+    "@angular/platform-browser": "5.2.11",
+    "@angular/platform-browser-dynamic": "5.2.11",
+    "@ionic-native/core": "4.13.0",
+    "@ionic-native/file": "4.13.0",
+    "codelyzer": "^4.4.2",
+    "conventional-changelog-cli": "^2.0.1",
+    "ionic-angular": "^3.9.2",
+    "rimraf": "^2.6.2",
+    "rxjs": "5.5.11",
+    "tslint": "^5.11.0",
+    "typescript": "2.4.2",
+    "zone.js": "0.8.26"
+  }
+}
