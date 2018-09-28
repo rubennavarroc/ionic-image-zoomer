@@ -94,6 +94,7 @@ export class ImgZoomerComponent implements OnInit {
         this.nextScale += 1;
         if (this.nextScale >= 4) this.nextScale = 1;
         this.transforms.push('scale(' + this.nextScale + ')');
+        this.transforms.push('translate(' + this.currentX + 'px,' + this.currentY + 'px)');
         this.containerElement.style.transform = this.transforms.join(' ');
       });
 
