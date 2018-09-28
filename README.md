@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/dm/ionic-image-zoomer.svg)](https://www.npmjs.com/package/ionic-image-zoomer)
 
 # Ionic Image Zoomer
-**Ionic** Module that enables pinching, paning and scaling images.
+**Ionic** Module that enables pinching, panning and scaling images.
 
 ## Installation
 
