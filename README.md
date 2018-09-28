@@ -35,7 +35,13 @@ This HTML code demonstrates basic usage of this module:
 ```html
 <img-zoomer [src]="'https://path.to/my/image.jpg'"></img-loader>
 ```
-
+This way the image takes the width or height of its parent container.
+If we want to set it a specific width or height, we can wrap it in  a container as follows:
+```html
+<div style="width:500px;">
+  <img-zoomer [src]="'https://path.to/my/image.jpg'"></img-loader>
+</div>
+```
 ## Contribution
 - **Having an issue**? or looking for support? [Open an issue](https://github.com/rubennavarroc/ionic-image-zoomer/issues/new) and we will get you the help you need.
 - Got a **new feature or a bug fix**? Fork the repo, make your changes, and submit a pull request.
