@@ -23,7 +23,6 @@ export interface ImageAttribute {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100%;
     }`
   ],
 })
@@ -31,8 +30,9 @@ export class ImgZoomerComponent implements OnInit {
 
   @Input('imgAttributes') imgAttributes: ImageAttribute[] = [];
 
-  @Output()
-  load: EventEmitter<ImgZoomerComponent> = new EventEmitter<ImgZoomerComponent>();
+  @Input() width: string = "100%";
+
+  @Output() load: EventEmitter<ImgZoomerComponent> = new EventEmitter<ImgZoomerComponent>();
   gesture: Gesture;
 
   imageElement: HTMLElement;
@@ -148,6 +148,8 @@ export class ImgZoomerComponent implements OnInit {
     }
 
     this.renderer.setAttribute(this.imageElement, 'src', imageUrl);
+    this.renderer.setStyle(this.imageElement, 'width',this.width);
+
     this.renderer.setAttribute(this.imageElement, 'class', "image");
     this.renderer.setAttribute(this.containerElement, 'class', "container");
 
