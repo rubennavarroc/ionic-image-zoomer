@@ -1,6 +1,6 @@
 {
   "name": "ionic-image-zoomer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ionic Component to zoom images.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
